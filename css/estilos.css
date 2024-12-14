@@ -1,2 +1,35 @@
-body
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Usa la fuente del diseño Figma */
+    background-color: #f4f4f4; /* Color de fondo basado en el diseño */
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #557B5C; /* Ejemplo de color desde tu diseño */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;  /* Eliminar los puntos de lista */
+    margin: 0;
+    padding: 1;
+    display: flex; /* Para alinear los elementos en línea */
+    justify-content: center; /* Alinear los elementos horizontalmente */
+}
     
