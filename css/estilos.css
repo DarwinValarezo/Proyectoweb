@@ -3,33 +3,216 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'Arial', sans-serif; /* Usa la fuente del diseño Figma */
-    background-color: #f4f4f4; /* Color de fondo basado en el diseño */
+    font-family: 'Arial', sans-serif;
+    background-color: #ecf1ef; /* Color de fondo */
     color: #333;
-    line-height: 1.6;
 }
-header {
-    background-color: #557B5C; /* Ejemplo de color desde tu diseño */
+.header {
+    background-color: #557B5C; /* Fondo verde */
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
 }
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 20px 0; 
 }
 
-header p {
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-title {
+    font-size: 36px;
+    margin: 10px 0;
+}
+.table-section {
+    margin-bottom: 40px; /* Margen entre la tabla y la sección siguiente */
+}
+
+.info-table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Para eliminar los bordes duplicados */
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #557B5C; /* Fondo verde para los encabezados */
+    color: white; /* Color de texto blanco */
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+.info-table td {
+    padding: 12px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación a la izquierda */
+    border: 1px solid #ddd; /* Borde sutil */
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternado de las filas */
+}
+
+.info-table tr:hover {
+    background-color: #e1e1e1; /* Fondo al pasar el cursor sobre una fila */
+}
+
+.table-container {
+    overflow-x: auto; /* Añade desplazamiento horizontal si la tabla es muy ancha */
+    margin-top: 20px;
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tabla */
+}
+.intro-text {
     font-size: 18px;
 }
 
-nav ul {
-    list-style-type: none;  /* Eliminar los puntos de lista */
-    margin: 0;
-    padding: 1;
-    display: flex; /* Para alinear los elementos en línea */
-    justify-content: center; /* Alinear los elementos horizontalmente */
+/* Estilos de navegación */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
-    
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #F0E68C; /* Color al pasar el cursor */
+}
+
+/* Estilo del cuerpo principal */
+.main-content {
+    padding: 20px;
+}
+
+/* Estilos de las secciones */
+.section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #557B5C;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    height: auto;
+}
+
+/* Estilo para artículos dentro de la sección */
+.article {
+    margin-bottom: 20px;
+}
+
+.article-title {
+    font-size: 24px;
+    color: #557B5C;
+}
+
+.article-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.article-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #557B5C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4a674a;
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: #F0E68C;
+}
