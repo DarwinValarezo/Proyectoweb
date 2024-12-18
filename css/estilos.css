@@ -1,158 +1,210 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Fondo global */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ecf1ef; /* Color de fondo */
-    color: #333;
+    background-color: #F5F5F5; /* Color claro de fondo */
 }
-.header {
-    background-color: #557B5C; /* Fondo verde */
+
+/* Encabezado */
+.encabezado {
+    background-color: #557B5C; /* Color verde del encabezado */
     color: white;
     text-align: center;
     padding: 20px 0;
 }
-.video-container {
+
+/* Contenedor del video */
+.video-encabezado {
     position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin: 20px 0; 
+    width: 100%;
+    max-width: 900px; /* Limitar el ancho máximo para que no sea tan grande */
+    margin: 0 auto;
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido no se desborde */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.video-encabezado iframe {
     width: 100%;
     height: 100%;
+    border: none;
+    border-radius: 15px; 
 }
-.main-title {
+
+@media screen and (max-width: 768px) {
+    .video-encabezado {
+        max-width: 100%; 
+    }
+
+    .video-encabezado iframe {
+        height: auto; 
+    }
+}
+
+.titulo-principal {
     font-size: 36px;
-    margin: 10px 0;
-}
-.table-section {
-    margin-bottom: 40px; /* Margen entre la tabla y la sección siguiente */
+    margin: 20px 0;
 }
 
-.info-table {
-    width: 100%; /* Ancho completo de la tabla */
-    border-collapse: collapse; /* Para eliminar los bordes duplicados */
-    margin-top: 20px;
-}
-
-.table-header {
-    background-color: #557B5C; /* Fondo verde para los encabezados */
-    color: white; /* Color de texto blanco */
-    padding: 12px; /* Espaciado interno */
-    text-align: left; /* Alineación del texto a la izquierda */
-    font-size: 18px; /* Tamaño de la fuente */
-}
-
-.info-table td {
-    padding: 12px; /* Espaciado interno de las celdas */
-    text-align: left; /* Alineación a la izquierda */
-    border: 1px solid #ddd; /* Borde sutil */
-}
-
-.info-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Color alternado de las filas */
-}
-
-.info-table tr:hover {
-    background-color: #e1e1e1; /* Fondo al pasar el cursor sobre una fila */
-}
-
-.table-container {
-    overflow-x: auto; /* Añade desplazamiento horizontal si la tabla es muy ancha */
-    margin-top: 20px;
-    border-radius: 8px; /* Bordes redondeados para la tabla */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de la tabla */
-}
-.intro-text {
+.texto-intro {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
-/* Estilos de navegación */
-.nav ul {
+/* Navegación */
+.navegacion ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    background-color: #4C6A46; 
 }
 
-.nav ul li {
+.navegacion ul li {
     margin: 0 15px;
 }
 
-.nav ul li a {
+.navegacion ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
-.nav ul li a:hover {
-    color: #F0E68C; /* Color al pasar el cursor */
+.navegacion ul li a:hover {
+    color: #F0E68C; 
 }
 
-/* Estilo del cuerpo principal */
-.main-content {
+/* Contenido principal */
+.contenido-principal {
     padding: 20px;
 }
 
-/* Estilos de las secciones */
-.section {
+/* Sección bienvenida */
+.seccion-bienvenida {
+    text-align: center;
     margin-bottom: 40px;
 }
 
-.section-title {
+.titulo-seccion {
     font-size: 28px;
+    color: #557B5C;
+    margin-bottom: 20px;
+}
+
+.texto-seccion {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.imagen-seccion {
+    max-width: 100%;
+    width: 35%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Sección de tabla */
+.seccion-tabla {
+    margin-bottom: 40px;
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tabla-informacion {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla-informacion th, .tabla-informacion td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabla-informacion th {
+    background-color: #557B5C;
+    color: white;
+}
+
+.tabla-informacion td {
+    background-color: #f9f9f9;
+}
+
+/* Sección de Cultura */
+.seccion-cultura {
+    margin-bottom: 40px;
+}
+
+.articulo {
+    margin-bottom: 20px;
+}
+
+.titulo-articulo {
+    font-size: 24px;
     color: #557B5C;
     margin-bottom: 10px;
 }
 
-.section-text {
+.texto-articulo {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.section-image {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    height: auto;
-}
-
-/* Estilo para artículos dentro de la sección */
-.article {
-    margin-bottom: 20px;
-}
-
-.article-title {
-    font-size: 24px;
-    color: #557B5C;
-}
-
-.article-text {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.article-image {
-    width: 100%;
-    max-width: 400px;
+.imagen-articulo {
+    max-width: 100%;
+    width: 35%;
     display: block;
     margin: 10px auto;
 }
 
-.contact-form {
+/* Sección de Turismo */
+.seccion-turismo {
+    margin-bottom: 40px;
+}
+
+.articulo {
+    margin-bottom: 20px;
+}
+
+.titulo-articulo {
+    font-size: 24px;
+    color: #557B5C;
+    margin-bottom: 10px;
+}
+
+.texto-articulo {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.imagen-articulo {
+    max-width: 100%;
+    width: 35%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Sección de contacto */
+.seccion-contacto {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.formulario-contacto {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -161,13 +213,13 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form label {
+.formulario-contacto label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
 }
 
-.contact-form input, .contact-form textarea {
+.formulario-contacto input, .formulario-contacto textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -176,7 +228,7 @@ body {
     font-size: 16px;
 }
 
-.contact-form button {
+.formulario-contacto button {
     padding: 10px 20px;
     background-color: #557B5C;
     color: white;
@@ -186,33 +238,33 @@ body {
     cursor: pointer;
 }
 
-.contact-form button:hover {
+.formulario-contacto button:hover {
     background-color: #4a674a;
 }
 
-/* Estilos del pie de página */
-.footer {
+/* Pie de página */
+.pie-pagina {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px 0;
 }
 
-.footer-nav ul {
+.navegacion-pie ul {
     list-style: none;
     padding: 10px 0;
 }
 
-.footer-nav ul li {
+.navegacion-pie ul li {
     display: inline;
     margin: 0 15px;
 }
 
-.footer-nav ul li a {
+.navegacion-pie ul li a {
     color: white;
     text-decoration: none;
 }
 
-.footer-nav ul li a:hover {
+.navegacion-pie ul li a:hover {
     color: #F0E68C;
 }
