@@ -141,34 +141,55 @@ body {
     margin-top: 20px;
 }
 
-/* Formulario de contacto */
-.formulario-contacto {
+/* Sección de contacto */
+.seccion-contacto {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;  /* Centra verticalmente */
+    height: 100vh; /* Ajusta el formulario al 100% de la pantalla */
+    width: 250%;
+    padding: 20px;
 }
 
-.formulario-contacto input,
+.formulario-contacto {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 900px; /* Ajusta el tamaño máximo */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los campos */
+}
+
+.formulario-contacto input, 
 .formulario-contacto textarea {
-    padding: 10px;
-    font-size: 16px;
+    width: 100%; /* Los campos ocuparán el 100% de ancho */
+    padding: 12px;
+    margin-bottom: 20px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
 }
 
 .formulario-contacto button {
-    background-color: #557B5C;
+    background-color: #3E7B48; /* Color de fondo del botón */
     color: white;
-    padding: 10px;
+    padding: 12px 25px;
     border: none;
-    font-size: 16px;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%; /* Ajustar el botón para que ocupe todo el ancho del formulario */
+    margin-top: 20px;
 }
 
 .formulario-contacto button:hover {
-    background-color: #3A5A3B;
+    background-color: #2f5d36;
 }
+
 
 /* Pie de página */
 .pie-pagina {
@@ -209,8 +230,8 @@ body {
     }
 }
 
+
 /* Cultura */
-/* General */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
