@@ -232,6 +232,7 @@ body {
 
 
 /* Cultura */
+/* Estilos globales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -287,8 +288,19 @@ main {
     padding: 20px;
 }
 
+/* División en cuatro partes para las secciones */
+.contenedor-secciones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 20px; /* Espacio entre columnas */
+}
+
 section {
     margin-bottom: 40px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
@@ -319,8 +331,21 @@ form {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Video centrado al final */
+video {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo del formulario */
 form label {
     display: block;
     margin-bottom: 10px;
@@ -378,7 +403,6 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo responsivo para móviles */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -405,4 +429,20 @@ footer nav ul li a:hover {
     section p {
         font-size: 1rem;
     }
+
+    .contenedor-secciones {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    video {
+        width: 100%;
+    }
 }
+
+main section iframe {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%; 
+    height: auto;
+}
+
