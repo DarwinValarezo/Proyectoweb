@@ -3,63 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Tradiciones de Piñas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Lo Mejor de Piñas</title>
 </head>
 <body>
-    <header>
-        <h1>Tradiciones de Piñas</h1>
-        <p>Descubre las costumbres que hacen único a este rincón del Ecuador.</p>
-        <nav>
+    <header class="encabezado">
+        <section class="video-encabezado">
+            <iframe width="800" height="600" 
+                    src="https://www.youtube.com/embed/LoEBnNiXRo4" 
+                    title="Video Promocional de Piñas" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+        <h1 class="titulo-principal">Lo Mejor de Piñas</h1>
+        <p class="texto-intro">Ven y conoce lo mejor del Ecuador</p>
+        <nav class="navegacion">
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tradiciones.html">Tradiciones</a></li>
-                <li><a href="cultura.html">Cultura</a></li>
-                <li><a href="turismo.html">Turismo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Paginassecundarias/tradiciones.html">Tradiciones</a></li>
+                <li><a href="Paginassecundarias/Cultura.html">Cultura</a></li>
+                <li><a href="Paginassecundarias/Turismo.html">Turismo</a></li>
+                <li><a href="Paginassecundarias/Contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="flex-container">
-            <!-- Primera fila de secciones -->
-            <section class="flex-item">
-                <h2>Festividades y Celebraciones</h2>
-                <p>Las fiestas tradicionales en Piñas incluyen la Fiesta de la Virgen de la Merced...</p>
-                <img src="imgsecundarias/fiestas piñas.jpg" alt="Fiestas y Celebraciones">
-            </section>
-            <section class="flex-item">
-                <h2>Costumbres Locales</h2>
-                <p>Los piñasienses tienen un fuerte sentido de comunidad...</p>
-                <img src="imgsecundarias/tradiciones.jpeg" alt="Tradiciones de Piñas">
-            </section>
-        </div>
+    <main class="contenido-principal">
+        <section class="seccion-bienvenida" id="inicio">
+            <h2 class="titulo-seccion">Bienvenidos a Piñas</h2>
+            <p class="texto-seccion">La ciudad de Piñas es el centro urbano y cabecera del cantón Piñas, perteneciente a la Provincia de El Oro...</p>
+            <img class="imagen-seccion" src="img/20501416.jpg" alt="vista de la ciudad" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+        </section>
 
-        <div class="flex-container">
-            <!-- Segunda fila de secciones -->
-            <section class="flex-item">
-                <h2>Tendidos</h2>
-                <p>Feria comercial que se realiza en septiembre...</p>
-                <img src="imgsecundarias/tendidos.jpeg" alt="Tendidos">
-            </section>
-            <section class="flex-item">
-                <h2>Sopeado</h2>
-                <p>Se brinda en las visitas, una versión de tigrillo...</p>
-                <img src="imgsecundarias/sopeado.jpeg" alt="Sopeado">
-            </section>
-        </div>
+        <section class="seccion-tabla">
+            <h2 class="titulo-seccion">Factores de Piñas</h2>
+            <div class="contenedor-tabla">
+                <table class="tabla-informacion">
+                    <thead>
+                        <tr>
+                            <th class="cabecera-tabla">Factores</th>
+                            <th class="cabecera-tabla">Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ubicación</td>
+                            <td>Provincia de El Oro, Ecuador</td> 
+                        </tr>
+                        <tr>
+                            <td>Apodo</td>
+                            <td>Ciudad Orquídea de los Andes</td>
+                        </tr>
+                        <tr>
+                            <td>Población</td>
+                            <td>Aproximadamente 60,000 habitantes</td>
+                        </tr>
+                        <tr>
+                            <td>Atractivo Principal</td>
+                            <td>Variedad de orquídeas y tradiciones culturales</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <section class="flex-item">
-            <h2>Rally</h2>
-            <p>El Circuito Tradicional Ciudad Piñas...</p>
-            <img src="imgsecundarias/rally.jpeg" alt="Rally">
+        <section class="seccion-cultura" id="cultura">
+            <h2 class="titulo-seccion">Cultura</h2>
+            <article class="articulo">
+                <h3 class="titulo-articulo">Danzas Tradicionales</h3>
+                <p class="texto-articulo">Las danzas autóctonas de Piñas reflejan la historia y tradiciones de sus habitantes...</p>
+                <img class="imagen-articulo" src="img/danza.jpeg" alt="Danza tradicional en Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+            </article>
+            <article class="articulo">
+                <h3 class="titulo-articulo">Gastronomía</h3>
+                <p class="texto-articulo">Deléitate con platos típicos como el seco de gallina criolla, tamales y deliciosos dulces tradicionales.</p>
+                <img class="imagen-articulo" src="img/comidatipica.jpeg" alt="Plato típico de Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+            </article>
+        </section>
+    
+        <section class="seccion-turismo" id="turismo">
+            <h2 class="titulo-seccion">Explora Piñas</h2>
+            <article class="articulo">
+                <h3 class="titulo-articulo">Chorro Viringo</h3>
+                <p class="texto-articulo">En esta zona los visitantes pueden disfrutar de la refrescante agua natural que brota de la montaña Buenaventura...</p>
+                <img class="imagen-articulo" src="img/Chorro Viringo.jpg" alt="Cascada Chorro Viringo" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+            </article>
+            <article  class="articulo">
+                <h3  class="titulo-articulo">Fiestas Tradicionales</h3>
+                <p class="texto-articulo">En esta ciudad se celebran las fiestas en honor a la Virgen de la Merced...</p>
+                <img class="imagen-articulo" src="img/Fiestas piñas.jpeg" alt="Fiestas en Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+            </article>
+        </section>
+    
+        <section class="seccion-contacto" id="contacto">
+            <h2 class="titulo-seccion">Contáctanos</h2>
+            <form action="#" method="post" class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Turismo en Piñas</p>
-        <nav>
+    <footer class="pie-pagina">
+        <p>&copy 2024 Turismo en Piñas. Todos los derechos reservados</p>  
+        <nav class="navegacion-pie">
             <ul>
-                <li><a href="https://www.facebook.com/municipiodepinas">Facebook</a></li>
-                <li><a href="https://www.instagram.com/municipiopinas">Instagram</a></l
+                <li><a href="https://www.facebook.com/municipiodepinas/?locale=es_LA">Facebook</a></li>
+                <li><a href="https://www.instagram.com/municipiopinas/">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
