@@ -447,106 +447,78 @@ main section iframe {
 
 /* Tradiciones */
 /* Estilos generales */
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
-    color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Encabezado */
 header {
-    background-color: #005C46;
+    background-color: #2d6a4f;
+    padding: 20px;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 header nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
 header nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
-/* Estilo para la estructura tipo tabla con grid */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px;
+/* Secciones de contenido con Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que las secciones se acomoden en varias filas */
+    justify-content: space-between; /* Espaciado entre elementos */
+    gap: 20px; /* Espacio entre elementos */
     padding: 20px;
 }
 
-.grid-item {
+.flex-item {
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    width: 48%; /* Ocupa casi la mitad del contenedor */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.grid-item h2 {
-    font-size: 2rem;
-    color: #005C46;
-    margin-bottom: 10px;
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
-.grid-item p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.grid-item img {
-    max-width: 100%;  
-    height: auto;  
-    display: block;  
-    margin: 20px auto;  
-    border-radius: 8px;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
-/* Estilo para el formulario de contacto */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-/* Pie de página */
+/* Estilo del pie de página */
 footer {
-    background-color: #005C46;
+    background-color: #2d6a4f;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 footer nav ul {
@@ -556,7 +528,7 @@ footer nav ul {
 
 footer nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 footer nav ul li a {
@@ -565,181 +537,14 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
-/* Estilos responsivos */
+/* Responsividad */
 @media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Las secciones se apilan en una sola columna */
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
-
-    section p {
-        font-size: 1rem;
+    .flex-item {
+        width: 100%; /* Las secciones ocuparán todo el ancho en pantallas pequeñas */
     }
 }
 
 
-/* Estilos globales */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5F5; /* Fondo suave */
-    color: #333; /* Color de texto */
-}
-
-/* Encabezado */
-header {
-    background-color: #005C46; /* Color de fondo del encabezado */
-    color: #fff; /* Color de texto */
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-header nav {
-    margin-top: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Contenedor principal con Grid */
-.turismo-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
-    grid-template-rows: auto auto;          /* Dos filas */
-    gap: 20px;                              /* Espaciado entre las secciones */
-    padding: 20px;                          /* Espaciado dentro del contenedor */
-}
-
-/* Estilo para cada sección dentro del contenedor */
-.turismo-seccion {
-    background-color: #fff;                 /* Fondo blanco para cada sección */
-    border-radius: 8px;                     /* Bordes redondeados */
-    padding: 20px;                          /* Relleno dentro de la sección */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center;                     /* Centrado de texto */
-}
-
-.turismo-seccion img {
-    max-width: 100%;                        /* La imagen no se desborda */
-    height: auto;                           /* Mantiene las proporciones */
-    border-radius: 8px;                     /* Bordes redondeados en las imágenes */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
-}
-
-.turismo-seccion h2 {
-    font-size: 1.8rem;                      /* Título de la sección */
-    color: #005C46;                         /* Color verde oscuro */
-    margin-bottom: 15px;                    /* Espacio debajo del título */
-}
-
-.turismo-seccion p {
-    font-size: 1.2rem;                      /* Tamaño de texto para la descripción */
-    color: #333;                            /* Color del texto */
-    line-height: 1.6;                       /* Espaciado entre líneas */
-}
-
-/* Estilo para el video al final de la página */
-.turismo-video {
-    grid-column: span 2;                    /* Hacer que el video ocupe las dos columnas */
-    text-align: center;                     /* Centrado del video */
-    margin-top: 20px;                       /* Espacio superior */
-}
-
-/* Footer */
-footer {
-    background-color: #005C46;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo responsivo para móviles */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    header nav ul li {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .turismo-contenedor {
-        grid-template-columns: 1fr;  /* Se apilan las secciones en una columna */
-    }
-
-    .turismo-seccion {
-        padding: 15px;              /* Menos relleno en pantallas pequeñas */
-    }
-
-    .turismo-seccion h2 {
-        font-size: 1.5rem;          /* Ajuste del tamaño de los títulos */
-    }
-
-    .turismo-seccion p {
-        font-size: 1rem;            /* Ajuste del tamaño de los párrafos */
-    }
-}
