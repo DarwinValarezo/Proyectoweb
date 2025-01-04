@@ -230,21 +230,18 @@ body {
     }
 }
 
-
-/* Cultura */
-/* Estilos globales */
+/*Cultura */
+/* General */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5; 
-    color: #333; 
+    background-color: #F5F5F5;
 }
 
-/* Encabezado */
 header {
-    background-color: #005C46; 
-    color: #fff; 
+    background-color: #005C46;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -274,7 +271,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -283,101 +280,40 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Secciones */
+/* Main content */
 main {
     padding: 20px;
 }
 
-/* División en cuatro partes para las secciones */
-.contenedor-secciones {
+/* Grid Layout for the sections */
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
-
-section {
-    margin-bottom: 40px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
 }
 
-section h2 {
-    font-size: 2rem;
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.grid-item h2 {
+    font-size: 1.8rem;
     color: #005C46;
     margin-bottom: 15px;
 }
 
-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo para el formulario de contacto */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Video centrado al final */
-video {
-    display: block;
-    margin: 40px auto;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilo del formulario */
-form label {
-    display: block;
-    margin-bottom: 10px;
+.grid-item p {
     font-size: 1.1rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form button {
-    background-color: #005C46;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #003d30;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
     background-color: #005C46;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -394,7 +330,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -402,19 +338,18 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Responsive design for small screens */
 @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
     header h1 {
         font-size: 2rem;
     }
 
     header p {
         font-size: 1rem;
-    }
-
-    header nav ul li {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
     }
 
     section {
@@ -428,37 +363,21 @@ footer nav ul li a:hover {
     section p {
         font-size: 1rem;
     }
-
-    .contenedor-secciones {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    video {
-        width: 100%;
-    }
-}
-
-main section iframe {
-    display: block;
-    margin: 40px auto;
-    max-width: 100%; 
-    height: auto;
 }
 
 /* Tradiciones */
-/* Estilo para la estructura de la página */
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5; /* Color de fondo general */
-    color: #333; /* Color del texto */
+    background-color: #F5F5F5;
 }
 
-/* Estilo para el encabezado */
+/* Encabezado */
 header {
     background-color: #005C46;
-    color: #fff;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -488,7 +407,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -497,46 +416,43 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para el contenido principal con grid */
+/* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en la primera fila */
-    grid-template-rows: auto auto; /* Dos filas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 20px; /* Espacio entre las secciones */
-    padding: 20px;
+    margin: 20px; /* Margen alrededor */
 }
 
 .grid-item {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.grid-item h2 {
+    font-size: 1.8rem;
+    color: #005C46;
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .grid-item img {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 10px;
-    border-radius: 5px;
+    margin: 20px 0;
 }
 
-h2 {
-    font-size: 1.5rem;
-    color: #005C46;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-}
-
-/* Estilo para el pie de página */
+/* Footer */
 footer {
     background-color: #005C46;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -553,7 +469,7 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
@@ -561,8 +477,12 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo responsivo para móviles */
+/* Responsividad */
 @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -571,128 +491,15 @@ footer nav ul li a:hover {
         font-size: 1rem;
     }
 
-    header nav ul li {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
+    section {
+        padding: 10px;
     }
 
-    .grid-container {
-        grid-template-columns: 1fr 1fr; /* Las secciones se apilan en dos columnas */
+    section h2 {
+        font-size: 1.5rem;
     }
 
-    .grid-item {
-        margin-bottom: 20px;
+    section p {
+        font-size: 1rem;
     }
 }
-
-
-
-/* Turismo */
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F5F5F5;
-    color: #333;
-}
-
-/* Encabezado */
-header {
-    background-color: #005C46;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Grid Container para Turismo */
-.turismo-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
-    gap: 20px; /* Espacio entre las cajas */
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px; /* Ancho máximo */
-}
-
-/* Estilo de las "cajitas" */
-.turismo-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.turismo-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Pie de página */
-footer {
-    background-color: #005C46;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos responsivos para móviles */
-@media (max-width: 768px) {
-    .turismo-grid {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
-    }
-}
-
