@@ -219,10 +219,10 @@ body {
     color: #FFD700;
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
     .contenido-principal {
-        grid-template-columns: 1fr 1fr; /* Las secciones se apilan en dos columnas */
+        grid-template-columns: 1fr 1fr; 
     }
 
     .video-encabezado {
@@ -237,14 +237,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5; /* Color de fondo general */
-    color: #333; /* Color del texto */
+    background-color: #F5F5F5; 
+    color: #333; 
 }
 
 /* Encabezado */
 header {
-    background-color: #005C46; /* Color de fondo del encabezado */
-    color: #fff; /* Color de texto */
+    background-color: #005C46; 
+    color: #fff; 
     padding: 20px;
     text-align: center;
 }
@@ -291,9 +291,8 @@ main {
 /* División en cuatro partes para las secciones */
 .contenedor-secciones {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
-    gap: 20px; /* Espacio entre columnas */
-}
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
 
 section {
     margin-bottom: 40px;
@@ -585,5 +584,162 @@ footer nav ul li a:hover {
 
     section p {
         font-size: 1rem;
+    }
+}
+
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fondo suave */
+    color: #333; /* Color de texto */
+}
+
+/* Encabezado */
+header {
+    background-color: #005C46; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal con Grid */
+.turismo-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
+    grid-template-rows: auto auto;          /* Dos filas */
+    gap: 20px;                              /* Espaciado entre las secciones */
+    padding: 20px;                          /* Espaciado dentro del contenedor */
+}
+
+/* Estilo para cada sección dentro del contenedor */
+.turismo-seccion {
+    background-color: #fff;                 /* Fondo blanco para cada sección */
+    border-radius: 8px;                     /* Bordes redondeados */
+    padding: 20px;                          /* Relleno dentro de la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;                     /* Centrado de texto */
+}
+
+.turismo-seccion img {
+    max-width: 100%;                        /* La imagen no se desborda */
+    height: auto;                           /* Mantiene las proporciones */
+    border-radius: 8px;                     /* Bordes redondeados en las imágenes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+}
+
+.turismo-seccion h2 {
+    font-size: 1.8rem;                      /* Título de la sección */
+    color: #005C46;                         /* Color verde oscuro */
+    margin-bottom: 15px;                    /* Espacio debajo del título */
+}
+
+.turismo-seccion p {
+    font-size: 1.2rem;                      /* Tamaño de texto para la descripción */
+    color: #333;                            /* Color del texto */
+    line-height: 1.6;                       /* Espaciado entre líneas */
+}
+
+/* Estilo para el video al final de la página */
+.turismo-video {
+    grid-column: span 2;                    /* Hacer que el video ocupe las dos columnas */
+    text-align: center;                     /* Centrado del video */
+    margin-top: 20px;                       /* Espacio superior */
+}
+
+/* Footer */
+footer {
+    background-color: #005C46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo responsivo para móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .turismo-contenedor {
+        grid-template-columns: 1fr;  /* Se apilan las secciones en una columna */
+    }
+
+    .turismo-seccion {
+        padding: 15px;              /* Menos relleno en pantallas pequeñas */
+    }
+
+    .turismo-seccion h2 {
+        font-size: 1.5rem;          /* Ajuste del tamaño de los títulos */
+    }
+
+    .turismo-seccion p {
+        font-size: 1rem;            /* Ajuste del tamaño de los párrafos */
     }
 }
