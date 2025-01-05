@@ -58,7 +58,7 @@ body {
 }
 
 .navegacion ul li a:hover {
-    color: #FFD700; /* Resaltar en color dorado */
+    color: #FFD700; 
 }
 
 /* Secciones principales */
@@ -144,18 +144,18 @@ body {
 /* Sección de contacto */
 .seccion-contacto {
     display: flex;
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;  /* Centra verticalmente */
-    height: 100vh; /* Ajusta el formulario al 100% de la pantalla */
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh; 
     width: 250%;
     padding: 20px;
 }
 
 .formulario-contacto {
-    background-color: #fff; /* Fondo blanco para el formulario */
+    background-color: #fff; 
     padding: 30px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     width: 100%;
     max-width: 900px; /* Ajusta el tamaño máximo */
     text-align: center;
@@ -508,4 +508,216 @@ footer nav ul li a:hover {
     height: auto;   
     display: block;   
     margin: 20px 0;   
+}
+
+/*Turismo*/
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #005C46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Grid para las secciones */
+.turismo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.turismo-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.turismo-item h2 {
+    font-size: 1.8rem;
+    color: #005C46;
+    margin-bottom: 15px;
+}
+
+.turismo-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.turismo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .turismo-grid {
+        grid-template-columns: 1fr;  /* Una sola columna en pantallas pequeñas */
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* Pie de página */
+footer {
+    background-color: #005C46;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Contacto*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #005C46;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-info, .contact-form, .contact-details {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #005C46;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003d30;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 8px;
 }

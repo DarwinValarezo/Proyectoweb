@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
-    <title>Cultura de Piñas</title>
+    <title>Contacto - Cultura de Piñas</title>
 </head>
 <body>
     <header>
@@ -19,35 +19,48 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section class="contact-info">
             <h2>Contáctanos</h2>
-            <p>Visita nuestra pagina principal.</p>
+            <p>Si tienes alguna pregunta o deseas obtener más información, ¡no dudes en escribirnos!</p>
         </section>
-        <section>
-            <h2>Nuestro Contacto</h2>
-            <p>Nuestro número de telefono para asesoría.</p>
-        </section>
-    </main>
-    <main>
-        <section>
+
+        <section class="contact-form">
             <h2>Formulario de Contacto</h2>
-            <p>Si tienes alguna pregunta o deseas más información sobre Piñas, por favor llena el siguiente formulario y nos pondremos en contacto contigo lo más pronto posible.</p>
+            <p>Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
             <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
+                <div class="form-field">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-field">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-field">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
                 <button type="submit">Enviar</button>
             </form>
         </section>
-    </main>
 
+        <section class="contact-details">
+            <h2>Más Información</h2>
+            <p>Visítanos en:</p>
+            <ul>
+                <li><strong>Dirección:</strong> Piñas, Ecuador</li>
+                <li><strong>Teléfono:</strong> (07) 297-6130</li>
+                <li><strong>Correo:</strong> info@turismoenpinas.com</li>
+            </ul>
+        </section>
+
+        <section class="map">
+            <h2>Encuentra nuestra ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10414.917024732568!2d-79.54664930871735!3d-4.173053138168056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d6c6f8973fc687%3A0xf7d02e16b4e54be7!2sPi%C3%B1as!5e0!3m2!1ses-419!2sec!4v1616072191530!5m2!1ses-419!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Turismo en Piñas</p>
@@ -58,5 +71,6 @@
             </ul>
         </nav>
     </footer>
+
 </body>
 </html>
