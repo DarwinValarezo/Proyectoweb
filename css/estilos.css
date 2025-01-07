@@ -1,7 +1,8 @@
-* {
+
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Estilos globales */
@@ -43,10 +44,9 @@ body {
 }
 
 .navegacion ul li {
-    display: inline;
+    display: inline-block; 
     margin: 0 20px;
 }
-
 .navegacion ul li a {
     color: white;
     text-decoration: none;
@@ -58,14 +58,14 @@ body {
     color: #FFD700;
 }
 
-/* Secciones principales */
 .contenido-principal {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;  
+    grid-row-gap: 20px;     
     background-color: #ffffff;
     border-radius: 15px;
 }
@@ -137,7 +137,6 @@ body {
     margin-top: 20px;
 }
 
-/* Sección de contacto */
 .seccion-contacto {
     display: flex;
     justify-content: center;
@@ -213,7 +212,7 @@ body {
     color: #FFD700;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .contenido-principal {
         grid-template-columns: 1fr 1fr;
@@ -224,7 +223,7 @@ body {
     }
 }
 
-/* Cultura */
+
 body {
     background-color: #F5F5F5;
 }
@@ -242,9 +241,10 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block; 
     margin: 0 15px;
 }
+
 
 header nav ul li a {
     color: white;
@@ -280,7 +280,6 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Footer */
 footer {
     background-color: #005C46;
     color: white;
@@ -307,7 +306,7 @@ footer nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -334,7 +333,7 @@ footer nav ul li a:hover {
     }
 }
 
-/* Tradiciones */
+
 body {
     background-color: #F5F5F5;
 }
@@ -411,7 +410,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Turismo */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -442,9 +440,10 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; 
     margin: 0 15px;
 }
+
 
 nav ul li a {
     color: white;
@@ -458,18 +457,18 @@ nav ul li a:hover {
 
 .turismo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
+
 
 .turismo-item {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -491,7 +490,6 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-/* Contacto */
 body {
     background-color: #f4f4f4;
     color: #333;
