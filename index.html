@@ -9,10 +9,9 @@
 <body>
     <header class="encabezado">
         <section class="video-encabezado">
-            <iframe width="800" height="600" 
-                    src="https://www.youtube.com/embed/LoEBnNiXRo4" 
-                    title="Video Promocional de Piñas" 
-                    frameborder="0" 
+            <!-- Usar clase para controlar el tamaño del video -->
+            <iframe class="video-piñas" src="https://www.youtube.com/embed/LoEBnNiXRo4" 
+                    title="Video Promocional de Piñas" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
             </iframe>
@@ -21,11 +20,11 @@
         <p class="texto-intro">Ven y conoce lo mejor del Ecuador</p>
         <nav class="navegacion">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Paginassecundarias/tradiciones.html">Tradiciones</a></li>
-                <li><a href="Paginassecundarias/Cultura.html">Cultura</a></li>
-                <li><a href="Paginassecundarias/Turismo.html">Turismo</a></li>
-                <li><a href="Paginassecundarias/Contacto.html">Contacto</a></li>
+                <li><a href="index.html" aria-label="Ir a la página de inicio">Inicio</a></li>
+                <li><a href="Paginassecundarias/tradiciones.html" aria-label="Ir a la sección de tradiciones">Tradiciones</a></li>
+                <li><a href="Paginassecundarias/Cultura.html" aria-label="Ir a la sección de cultura">Cultura</a></li>
+                <li><a href="Paginassecundarias/Turismo.html" aria-label="Ir a la sección de turismo">Turismo</a></li>
+                <li><a href="Paginassecundarias/Contacto.html" aria-label="Ir a la sección de contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +32,8 @@
     <main class="contenido-principal">
         <section class="seccion-bienvenida" id="inicio">
             <h2 class="titulo-seccion">Bienvenidos a Piñas</h2>
-            <p class="texto-seccion">La ciudad de Piñas es el centro urbano y cabecera del cantón Piñas, perteneciente a la Provincia de El Oro, al suroeste de Ecuador. Es también conocida como «Ciudad Orquídea de los Andes», derivado del mismo apodo dado al cantón debido a la gran variedad de orquídeas encontradas en esta región del Ecuador meridional.
-                Piñas es una ciudad caracterizada por la belleza de sus mujeres,además de esto crece a pasos agigantados expandiéndose y dándose paso a la nueva era de la tecnología de punta.</p>
-            <img class="imagen-seccion" src="img/20501416.jpg" alt="vista de la ciudad" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+            <p class="texto-seccion">La ciudad de Piñas es el centro urbano y cabecera del cantón Piñas, perteneciente a la Provincia de El Oro, al suroeste de Ecuador. Es también conocida como «Ciudad Orquídea de los Andes», derivado del mismo apodo dado al cantón debido a la gran variedad de orquídeas encontradas en esta región del Ecuador meridional.</p>
+            <img class="imagen-seccion" src="img/20501416.jpg" alt="Vista panorámica de la ciudad de Piñas" style="max-width: 100%; display: block; margin: 0 auto;">
         </section>
 
         <section class="seccion-tabla">
@@ -75,12 +73,12 @@
             <article class="articulo">
                 <h3 class="titulo-articulo">Danzas Tradicionales</h3>
                 <p class="texto-articulo">Las danzas autóctonas de Piñas reflejan la historia y tradiciones de sus habitantes, además los bailes tradicionales concentran a cientos de turistas.</p>
-                <img class="imagen-articulo" src="img/danza.jpeg" alt="Danza tradicional en Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+                <img class="imagen-articulo" src="img/danza.jpeg" alt="Danza tradicional de Piñas" style="max-width: 100%; display: block; margin: 0 auto;">
             </article>
             <article class="articulo">
                 <h3 class="titulo-articulo">Gastronomía</h3>
                 <p class="texto-articulo">Deléitate con platos típicos como el seco de gallina criolla, tamales y deliciosos dulces tradicionales.</p>
-                <img class="imagen-articulo" src="img/comidatipica.jpeg" alt="Plato típico de Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+                <img class="imagen-articulo" src="img/comidatipica.jpeg" alt="Plato típico de Piñas" style="max-width: 100%; display: block; margin: 0 auto;">
             </article>
         </section>
     
@@ -88,16 +86,13 @@
             <h2 class="titulo-seccion">Explora Piñas</h2>
             <article class="articulo">
                 <h3 class="titulo-articulo">Chorro Viringo</h3>
-                <p class="texto-articulo">Está ubicada en la parte alta de la provincia del Oro cerca de la ciudad de Piñas, esta reserva presenta una gran diversidad de aves, especies vegetales e insectos.
-
-                    La zona es conocida por ser uno de las más ricas en sitios de ornitología de fácil acceso en Los Andes ecuatorianos. Protege una angosta zona de bosque nublado y de hábitat y otra zona de laderas secas al oeste de los Andes en el sur de Ecuador.</p>
-        
-                <img class="imagen-articulo" src="img/Chorro Viringo.jpg" alt="Cascada Chorro Viringo" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+                <p class="texto-articulo">Está ubicada en la parte alta de la provincia del Oro cerca de la ciudad de Piñas, esta reserva presenta una gran diversidad de aves, especies vegetales e insectos.</p>
+                <img class="imagen-articulo" src="img/Chorro Viringo.jpg" alt="Cascada Chorro Viringo" style="max-width: 100%; display: block; margin: 0 auto;">
             </article>
-            <article  class="articulo">
-                <h3  class="titulo-articulo">Fiestas Tradicionales</h3>
+            <article class="articulo">
+                <h3 class="titulo-articulo">Fiestas Tradicionales</h3>
                 <p class="texto-articulo">En las fiestas patronales, que se celebran en septiembre, se realizan desfiles, presentaciones de bandas populares, juegos tradicionales y eucaristías. En el pregón de las fiestas, los participantes lucen trajes típicos y muestran danzas tradicionales.</p>
-                <img class="imagen-articulo" src="img/Fiestas piñas.jpeg" alt="Fiestas en Piñas" width="35%" style="display: block; margin: 0 auto; max-width: 100%;">
+                <img class="imagen-articulo" src="img/Fiestas piñas.jpeg" alt="Fiestas tradicionales en Piñas" style="max-width: 100%; display: block; margin: 0 auto;">
             </article>
         </section>
     
